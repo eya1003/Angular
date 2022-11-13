@@ -1,0 +1,9 @@
+<div *ngFor="let i of invoices">
+    {{i.id}}
+    {{i.prenom}}
+    {{i.nom}}
+    <a [routerLink]="['/deleteInvoices/',i.id]">remove</a>
+    <a [routerLink]="['/addInvoices/',i.id]">add</a>
+    <a [routerLink]="['/updateInvoices/',i.id]">update</a>
+   
+</div> 

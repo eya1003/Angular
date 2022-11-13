@@ -1,5 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AddInvoiceComponent } from './atelier10/invoice/add-invoice/add-invoice.component';
+import { DeleteInvoiceComponent } from './atelier10/invoice/delete-invoice/delete-invoice.component';
+import { InvoiceComponent } from './atelier10/invoice/invoice.component';
+import { UpdateInvoiceComponent } from './atelier10/invoice/update-invoice/update-invoice.component';
 import { ListProductsComponentComponent } from './atelier9/list-products-component/list-products-component.component';
 import { DetailComponent } from './detail/detail.component';
 import { FormComponent } from './form/form.component';
@@ -15,6 +19,11 @@ const routes: Routes = [
   //{path:'',redirectTo:'login',pathMatch:'full'},
   {path:'user',component:ListUserComponent},
   {path:'login',component:LoginComponent},
+
+  {path: 'deleteInvoices/:id', component:DeleteInvoiceComponent},
+  {path: 'addInvoices', component:AddInvoiceComponent},
+  {path: 'listInvoices', component:InvoiceComponent},
+  {path: 'updateInvoices/:id', component:UpdateInvoiceComponent},
   {path:'atelier9',component:ListProductsComponentComponent},
   {path:'form',component:FormComponent},
   {path:'detail/:id',component:DetailComponent},

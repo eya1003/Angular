@@ -16,9 +16,21 @@
   "profile": {
     "name": "typicode"
   },
-  "invoices": {
-    "id": 1,
-    "prenom": "Eya",
-    "nom": "Amor"
-  }
+  "invoices": [
+    {
+      "id": 2,
+      "nom": "zeineb",
+      "prenom": "hamdi"
+    },
+    {
+      "nom": "amm",
+      "prenom": "yas",
+      "id": 4
+    },
+    {
+      "nom": "esprit",
+      "prenom": "esprit",
+      "id": 5
+    }
+  ]
 }
