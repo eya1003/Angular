@@ -1,0 +1,9 @@
+<p>list-user works!</p>
+<div *ngFor="let u of service.getAllUsers()">{{u.lastName}}
+    <!--  ken service private let u of user li amalna creation fl ts-->
+{{u.firstName}}
+{{u.email}}
+{{u.password}}
+</div>
+<input type="submit" (click)="service.fetchNbInList(service.list,'lastName'
+,'Clooney')">

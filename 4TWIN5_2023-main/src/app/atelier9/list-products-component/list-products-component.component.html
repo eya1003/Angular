@@ -1,0 +1,12 @@
+<p>list-products-component works!</p>
+<div *ngFor="let u of service.getAllProducts() let i = index">{{u.idProduct}}
+    <!--  ken service private let u of user li amalna creation fl ts-->
+{{u.code}}
+{{u.libelle}}
+{{u.prixunitaire}}
+{{u.tauxTva}}
+
+<button (click)="handle(u.libelle); selectedRow=i">calculer</button>
+<h2 [hidden]="selectedRow !== i">{{data}}</h2>
+
+</div>

@@ -1,0 +1,53 @@
+<p>content works!</p>
+{{msg}}<!-- 
+<input type="submit" value="send" (click)="showMsg()">
+<div [style.backgroundColor]="kolor">property</div>
+<input type="text" [(ngModel)]="kolor">
+
+<div *ngFor="let t of user;  index as i">
+   <div *ngIf="t.firstName=='ali'" [style.backgroundColor]="'red'">
+    index: {{i}}
+{{t.idCustomer}}
+{{t.firstName}}
+{{t.lastName}}
+<div *ngIf="i==j">
+detail: {{list.firstName}}
+</div>
+<input type="submit" value="delete" (click)="deleteUser(i)">
+<input type="submit" value="detail" (click)="detail(i)">
+</div>
+<div *ngIf="t.firstName!='ali'" [style.backgroundColor]="'green'">
+    index: {{i}}
+{{t.idCustomer}}
+{{t.firstName}}
+{{t.lastName}}
+<div *ngIf="i==j">
+detail: {{list.firstName}}
+</div>
+<input type="submit" value="delete" (click)="deleteUser(i)">
+<input type="submit" value="detail" (click)="detail(i)">
+</div>
+</div>
+<h1>ngStyle</h1>
+<div *ngFor="let t of user;  index as i">
+    <div [ngStyle]="{'backgroundColor':t.firstName=='ali'?'red':'green'}">
+     index: {{i}}
+ {{t.idCustomer}}
+ {{t.firstName}}
+ {{t.lastName}}
+
+ <a routerLink="detail/{{t.idCustomer}}"> detail</a>
+ <div *ngIf="i==j">
+ detail: {{list.firstName}}
+ </div>
+ <input class="btn btn-primary" type="submit" value="delete" (click)="deleteUser(i)">
+ <input type="submit" value="detail" (click)="detail(i)">
+ </div>
+
+ <h1>ngclass</h1>
+<div *ngFor="let t of user;  index as i">
+ <input [ngClass]="'btn btn-primary'" type="submit" value="delete" (click)="deleteUser(i)">
+ <input type="submit" value="detail" (click)="detail(i)">
+ 
+
+</div> -->
