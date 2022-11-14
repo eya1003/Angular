@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { InvoiceServiceService } from '../../invoice-service.service';
 
@@ -9,18 +9,20 @@ import { InvoiceServiceService } from '../../invoice-service.service';
 })
 export class UpdateInvoiceComponent implements OnInit {
 id:any;
+@Input()invoicee:any;
   constructor(public invoiceService:InvoiceServiceService,
     private acR:ActivatedRoute,
     private router:Router) { }
 
   ngOnInit(): void {
   }
-  updateInvoice(myformdata:any){
+ /*  updateInvoice(myformdata:any){
     this.id=this.acR.snapshot.params['id'];
     this.invoiceService.updateInvoice(myformdata,this.id).subscribe(
       ()=> {
         console.log("updated");
         this.router.navigate(['listInvoices'])
+
       },
       (error)=>{
         if (error.status==404){
@@ -29,7 +31,15 @@ id:any;
         console.log(error)
       }
     );  
+  } */
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log(this.invoicee)
   }
-  
-
+onSubmitUpdate(f:any){
+  this.invoiceService.updateInvoice(f,this.invoicee.id).subscribe(
+    ()=>{
+      console.log('updated');
+    }
+  );
+}
 }

@@ -20,6 +20,10 @@ import { ListProductsComponentComponent } from './atelier9/list-products-compone
 import { InvoiceComponent } from './atelier10/invoice/invoice.component';
 import { DeleteInvoiceComponent } from './atelier10/invoice/delete-invoice/delete-invoice.component';
 import { AddInvoiceComponent } from './atelier10/invoice/add-invoice/add-invoice.component';
+
+import { MobileComponent } from './seance11/mobile/mobile.component';
+import { ShowProductComponent } from './show-product/show-product.component';
+import { ErrorsComponent } from './errors/errors.component';
 import { UpdateInvoiceComponent } from './atelier10/invoice/update-invoice/update-invoice.component';
 
 @NgModule({
@@ -40,6 +44,9 @@ import { UpdateInvoiceComponent } from './atelier10/invoice/update-invoice/updat
     DeleteInvoiceComponent,
     AddInvoiceComponent,
     UpdateInvoiceComponent,
+    MobileComponent,
+    ShowProductComponent,
+    ErrorsComponent
     
   ],
   imports: [

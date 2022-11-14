@@ -10,6 +10,7 @@ import { FormComponent } from './form/form.component';
 import { ListUserComponent } from './list-user/list-user.component';
 import { LoginComponent } from './login/login.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { MobileComponent } from './seance11/mobile/mobile.component';
 import { AdduserComponent } from './user/adduser/adduser.component';
 import { ListuserComponent } from './user/listuser/listuser.component';
 import { RemoveuserComponent } from './user/removeuser/removeuser.component';
@@ -19,7 +20,7 @@ const routes: Routes = [
   //{path:'',redirectTo:'login',pathMatch:'full'},
   {path:'user',component:ListUserComponent},
   {path:'login',component:LoginComponent},
-
+  {path:'mobile',component:MobileComponent},
   {path: 'deleteInvoices/:id', component:DeleteInvoiceComponent},
   {path: 'addInvoices', component:AddInvoiceComponent},
   {path: 'listInvoices', component:InvoiceComponent},

@@ -8,6 +8,8 @@ import { InvoiceServiceService } from '../invoice-service.service';
 })
 export class InvoiceComponent implements OnInit {
 invoices:any;
+show=false;
+singleUser:any;
   constructor(private invoiceService:InvoiceServiceService) { }
 
   ngOnInit(): void {
@@ -16,6 +18,10 @@ invoices:any;
 this.invoices=d;  
      }
     );
+  }
+  showFormUpdate(p:any){
+    this.singleUser=p;
+this.show=true;
   }
 
 }
