@@ -4,6 +4,8 @@
     {{i.nom}}
     <a [routerLink]="['/deleteInvoices/',i.id]">remove</a>
     <a [routerLink]="['/addInvoices']">add</a>
-    <a [routerLink]="['/updateInvoices/',i.id]">update</a> 
-    <!-- <input type="submit" value="update" (click)="updateInvoice()"" > -->
+    <input type="submit"(click)="showFormUpdate(i)" value="update">
 </div> 
+<div *ngIf="show">
+    <app-update-invoice [invoicee]="singleUser"> </app-update-invoice>
+    </div>
