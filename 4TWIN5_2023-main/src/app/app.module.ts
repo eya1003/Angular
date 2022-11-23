@@ -25,6 +25,8 @@ import { MobileComponent } from './seance11/mobile/mobile.component';
 import { ShowProductComponent } from './show-product/show-product.component';
 import { ErrorsComponent } from './errors/errors.component';
 import { UpdateInvoiceComponent } from './atelier10/invoice/update-invoice/update-invoice.component';
+import { ShowoneProductComponent } from './atelier11/showone-product/showone-product.component';
+import { ProductComponent } from './atelier11/product/product.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,9 @@ import { UpdateInvoiceComponent } from './atelier10/invoice/update-invoice/updat
     UpdateInvoiceComponent,
     MobileComponent,
     ShowProductComponent,
-    ErrorsComponent
+    ErrorsComponent,
+    ShowoneProductComponent,
+    ProductComponent
     
   ],
   imports: [
